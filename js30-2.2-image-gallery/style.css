@@ -1,3 +1,131 @@
 body {
-	background-color: darkslategrey;
+	background-color: rgb(25, 25, 25);
+}
+
+header {
+	border-bottom: 0.4rem solid darkslategray;
+	width: 100vw;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper {
+	max-width: 80rem;
+}
+
+.header {
+	width: 100%;
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
+}
+.logo__img {
+	color: darkslategray;
+	font-size: 2.5rem;
+}
+.logo__title a {
+	font-family: "Comfortaa", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 2rem;
+	color: white;
+}
+
+.search {
+	position: relative;
+}
+.search-field {
+	width: 16.5rem;
+	padding: 0.5rem;
+	background-color: darkslategray;
+	border: 0.1rem solid white;
+	border-radius: 1rem;
+	color: white;
+	font-style: italic;
+	font-family: "Comfortaa", sans-serif;
+	transition: box-shadow 0.3s linear;
+}
+.search-field:focus {
+	box-shadow: 0 0 0.5rem 0.5rem darkslategray;
+}
+
+.img {
+	cursor: pointer;
+}
+.img-clean,
+.img-search {
+	position: absolute;
+	top: 0.6rem;
+	color: white;
+	font-size: 1rem;
+	z-index: 1;
+	cursor: pointer;
+}
+.img-clean {
+	right: 17rem;
+}
+.img-search {
+	right: 1rem;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gallery {
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.7rem;
+}
+
+.img img {
+	width: 23.75rem;
+	height: 13.375rem;
+	background-color: darkslategray;
+	border: 0.2rem solid darkslategray;
+	border-radius: 0.3rem;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+footer {
+	width: 100vw;
+	max-width: 100%;
+	background-color: darkslategray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1rem 0;
+}
+.footer a,
+.footer p {
+	font-family: "Comfortaa", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 1rem;
+	color: white;
+}
+.footer a img {
+	width: 2rem;
 }
