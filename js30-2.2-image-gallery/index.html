@@ -4,10 +4,68 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<header>
+			<div class="header wrapper">
+				<div class="logo">
+					<div class="logo__img">
+						<span class="mdi mdi-camera"></span>
+					</div>
+					<div class="logo__title">
+						<a href="https://unsplash.com/">Unsplash API</a>
+					</div>
+				</div>
+				<div class="search">
+					<div id="inputClean" class="img-clean">
+						<span class="mdi mdi-window-close"></span>
+					</div>
+
+					<input
+						id="input"
+						class="search-field"
+						type="text"
+						placeholder="Type to search"
+						autofocus
+					/>
+
+					<div id="inputSearch" class="img-search">
+						<span class="mdi mdi-magnify"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="wrapper">
+				<div id="gallery" class="gallery">
+					<!--<div class="img">
+						<img src="" alt="">
+					</div>-->
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer wrapper">
+				<a href="https://github.com/Aquapunktura/">GitHub</a>
+				<a href="https://rs.school/courses/javascript-preschool-ru"
+					><img
+						src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/refs/heads/master/react/assets/rss-logo.svg"
+						alt="rss"
+				/></a>
+				<p>2024</p>
+			</div>
+		</footer>
+		<script src="testData.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>
